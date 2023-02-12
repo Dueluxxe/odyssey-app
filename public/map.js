@@ -17,7 +17,7 @@ function initMap() {
     [{ lat: 32.7894, lng: 96.8016 }, "Klyde Warren Park"],
   ];
 
-  const exploreButton = '<button type="button" class="btn btn-light">Light</button>';
+  const exploreButton = '<div id="content">' + '<button type="button" class="btn btn-light">Light</button>' + '</div>';
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow({
     content: exploreButton,

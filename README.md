@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+## Inspiration
+We wanted to encourage people to engage more with the world around them and explore new places.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+It provides a platform for people to discover new places around them and share their adventures with other users. It includes a map that contains markers at specific places of interest around the area where the user lives, and user can earn points by visiting these places. They can then redeem their points for rewards. There is also a leaderboard that allows users to see how they stack up against their friends in terms of points earned.
 
-## Available Scripts
+## How we built it
+We made use of the Google Maps API, HTML, CSS, and Javascript to build the app, and used Figma for wireframing.
 
-In the project directory, you can run:
+## Challenges we ran into
+Our ideas turned out to be too much to be able to complete in 24 hours, and we ended up not having enough time to implement everything we want to include. Some of us were new to the languages that were used, so we had some initial difficulties with coding the application.
 
-### `npm start`
+## Accomplishments that we're proud of
+We were able to come up with an idea that everyone agreed on and successfully collaborate with each other. We're glad we were able to make progress on a project idea that we considered to be challenging to implement. For some members, it was either their first time using APIs or their first time using some of the programming languages that were used, but we were able to creating a working application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What we learned
+We learned which elements were actually crucial for prototypes, we learned new programming languages and practiced using new technologies, and we also learned project management, time management, and teamwork skills.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for Odyssey
+Worldwide expansion! The app currently only supports the DFW area but we hope to change that. We also hope for the application to get sponsors so we can offer more rewards.
