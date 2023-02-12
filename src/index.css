@@ -16,6 +16,11 @@ code {
     monospace;
 }
 
+img{
+  text-align:center;
+  width: 40%;
+}
+
 h1 {
   font-family: 'Esteban', serif;
   font-weight: 400;
@@ -28,7 +33,7 @@ h1 {
   margin-top: 50px;
   font-family: 'Esteban', serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 48px;
   text-align: center;
   color: #FCA311;
 }
@@ -122,6 +127,7 @@ a:hover{
   font-size: 14px;
   color: #ffd99c;
 }
+
 input[type=submit]{
   width: 200px;
   margin-top: 16px;
@@ -137,6 +143,34 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
+  padding: 4px;
+  border: none;
+  font-family: 'Estedad-VF';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  color: #fca311;
+  background-color: white;
+}
+
+.button-square{
+  min-width: 200px;
+  margin-top: 16px;
+  padding: 4px;
+  border: none;
+  font-family: 'Estedad-VF';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  color: white; 
+  background-color: #fca311;
+}
+
+.button-square:hover{
+  min-width: 200px;
+  margin-top: 16px;
   padding: 4px;
   border: none;
   font-family: 'Estedad-VF';
