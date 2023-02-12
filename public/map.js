@@ -17,7 +17,7 @@ function initMap() {
     [{ lat: 34.800326, lng: -111.7665047 }, "Bell Rock"],
   ];
 
-  const exploreButton = '<button type="button" class="btn btn-light">Light</button>';
+  const exploreButton = '<div id="content">' + '<button type="button" class="btn btn-light">Light</button>' + '</div>';
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow({
     content: exploreButton,
@@ -38,7 +38,7 @@ function initMap() {
     // Add a click listener for each marker, and set up the info window.
     marker.addListener("click", () => {
       infoWindow.close();
-      infoWindow.setContent(marker.getTitle() + "\n \n Hi there");
+      infoWindow.setContent(marker.getTitle());
       infoWindow.open(marker.getMap(), marker);
     });
   });
