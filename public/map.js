@@ -13,8 +13,8 @@ function initMap() {
     [{lat: 32.98500, lng: -96.75000}, "The University of Texas at Dallas"],
     [{ lat: 32.7753, lng: -96.8089}, "Reunion Tower"],
     [{lat: 32.82306, lng: -96.71694 }, "Dallas Arboretum"],
-    [{ lat: 34.823736, lng: -111.8001857 }, "Red Rock Crossing"],
-    [{ lat: 34.800326, lng: -111.7665047 }, "Bell Rock"],
+    [{ lat: 32.7877, lng: 96.8010 }, "Dallas Museum of Art"],
+    [{ lat: 32.7894, lng: 96.8016 }, "Klyde Warren Park"],
   ];
 
   const exploreButton = '<button type="button" class="btn btn-light">Light</button>';
@@ -38,7 +38,7 @@ function initMap() {
     // Add a click listener for each marker, and set up the info window.
     marker.addListener("click", () => {
       infoWindow.close();
-      infoWindow.setContent(marker.getTitle() + "\n \n Hi there");
+      infoWindow.setContent(marker.getTitle());
       infoWindow.open(marker.getMap(), marker);
     });
   });
