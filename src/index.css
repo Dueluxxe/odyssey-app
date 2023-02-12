@@ -6,18 +6,42 @@
   font-family: 'Sarabun', sans-serif;
   color: #333;
 }
-.navbar {
+.home{
+  
+}
+.progress header{
+  height: 10%;
+  background-color: #633979;
+  padding: 20px;
+}
+.progress .bar{
+  width: 60%;
+  background-color: #FCA311;
+  padding: 3px;
+  align-items:center;
+  text-align: left;
+  vertical-align: middle;
+
+}
+.progress .container{
+  width: 80%;
+  background-color: white;
+  padding: 4px;
+  text-align: center;
+
+}
+/* .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-}
-.navbar h1 {
+  border-bottom: 1px solid #f2f2f2; 
+} */
+/* .navbar h1 {
   color: #f1356d;
-}
-.navbar .links {
+} */
+/* .navbar .links {
   margin-left: auto;
 }
 .navbar a {
@@ -27,9 +51,9 @@
 }
 .navbar a:hover {
   color: #f1356d;
-}
-.content {
+} */
+/* .content {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-}
+} */

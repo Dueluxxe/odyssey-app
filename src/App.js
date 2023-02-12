@@ -8,9 +8,9 @@ function App() {
   const link = "http://www.google.com";
   return (
     <div className="App">
-      <Navbar />
+      <Home />
       <div className='content'>
-          <Home />
+        <Navbar />
       </div>
       {/* <div className="content"></div>
       <h1>{title}</h1>
