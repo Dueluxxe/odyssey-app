@@ -1,21 +1,22 @@
 <html>
   <head>
     <title>Add Map</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
+    <link rel="stylesheet" href = "../src/home.css">
+    <link href="https://fonts.googleapis.com/%22%3E" rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Sarabun:wght@200;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <script type="module" src="./map.js"></script>
     <style>
     /* Set the size of the div element that contains the map */
         #map {
-          height: 100%; /* The height is 400 pixels */
+          height: 90%; /* The height is 400 pixels */
           width: 100%; /* The width is the width of the web page */
         }
         
     </style>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
+    <h3>Space Quest!</h3>
     <!--The div element for the map -->
     <div id="map"></div>
 
@@ -29,5 +30,14 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkay_o0HhhK2I9Hl5q9ZuonOaMFYw0DKs&callback=initMap&v=weekly"
       defer
     ></script>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href = "achievements.html" class = "small1"><img src = "../images/achivements.png" width = 15% alt = "achievements"></a></li>
+                <li> <a href = "profile.html" class = "profile"><img src = "../images/profile.png" width = 40% alt = "profile"></a></li>
+                <li><a href = "leaderboard.html" class = "small2"> <img src = "../images/medal1.png" width = 15% alt = "medal"></a></li>
+            </ul>  
+        </nav>
+    </footer>
   </body>
 </html>

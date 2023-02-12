@@ -1,56 +1,47 @@
-// Initialize and add the map
+// The following example creates five accessible and
+// focusable markers.
 function initMap() {
-  // The location of Uluru
-  const uluru = { lat: 32.98594036474673, lng: -96.75023667314427};
-  // The map, centered at Uluru
   const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: {lat: 32.98594036474673, lng: -96.75023667314427 },
     mapId: "366b7db7705c4e4c",
-    zoom: 16,
-    center: uluru,
   });
-  // added code
-  const contentString =
-  '<div id="content">' +
-  '<div id="siteNotice">' +
-  "</div>" +
-  '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-  '<div id="bodyContent">' +
-  "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-  "sandstone rock formation in the southern part of the " +
-  "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-  "south west of the nearest large town, Alice Springs; 450&#160;km " +
-  "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-  "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-  "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-  "Aboriginal people of the area. It has many springs, waterholes, " +
-  "rock caves and ancient paintings. Uluru is listed as a World " +
-  "Heritage Site.</p>" +
-  '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-  "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-  "(last visited June 22, 2009).</p>" +
-  "</div>" +
-  "</div>";
-const infowindow = new google.maps.InfoWindow({
-  content: contentString,
-  ariaLabel: "Uluru",
-});
-const image = "../images/marker_asset.png"
-// const saved_image = drawImage(image,'' ,'', '10px', '10px');
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-      position: uluru,
-      map: map,
-      icon: image,
-      title: "Uluru (Ayers Rock)",
-    });
-  marker.addListener("click", () => {
-  infowindow.open({
-    anchor: marker,
-    map,
-  });
-});
-// added code
+  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
+  // receives the initial focus when tab is pressed. Use arrow keys to
+  // move between markers; press tab again to cycle through the map controls.
+  const tourStops = [
+    [{lat: 32.98500, lng: -96.75000}, "The University of Texas at Dallas"],
+    [{ lat: 32.7753, lng: -96.8089}, "Reunion Tower"],
+    [{lat: 32.82306, lng: -96.71694 }, "Dallas Arboretum"],
+    [{ lat: 34.823736, lng: -111.8001857 }, "Red Rock Crossing"],
+    [{ lat: 34.800326, lng: -111.7665047 }, "Bell Rock"],
+  ];
 
+  const exploreButton = '<button type="button" class="btn btn-light">Light</button>';
+  // Create an info window to share between markers.
+  const infoWindow = new google.maps.InfoWindow({
+    content: exploreButton,
+  });
+
+  // Create the markers.
+  const image = "../images/marker_asset.png"
+  tourStops.forEach(([position, title], i) => {
+    const marker = new google.maps.Marker({
+      position,
+      map,
+      title: `(10 pts) ${title}`,
+      // label: `${i + 1}`,
+      icon: image,
+      optimized: false,
+    });
+
+    // Add a click listener for each marker, and set up the info window.
+    marker.addListener("click", () => {
+      infoWindow.close();
+      infoWindow.setContent(marker.getTitle() + "\n \n Hi there");
+      infoWindow.open(marker.getMap(), marker);
+    });
+  });
 }
 
 window.initMap = initMap;

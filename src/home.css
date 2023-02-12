@@ -7,6 +7,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow:-moz-hidden-unscrollable;
   }
+h3{
+  text-align:center;
+}
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -21,16 +24,18 @@ body {
 
 
   footer{
-    height: 30%;
+    position:relative;
+    height: 20%;
     background-color:#633979;
     padding-bottom: 5%;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     vertical-align: bottom;
+    bottom: -100px;
   }
 
   a:hover{
-    background-color: #633979;
+    /* background-color: #633979; */
     z-index: 2;
     opacity: 70%;
   }
@@ -57,11 +62,22 @@ body {
   }
 
   .profile{
-    width: 100px;
+    position:absolute;
+    left:400px;
+    width: 500px;
   }
 
-  .small{
-    width: 50px;
+  .small1{
+    position:absolute;
+    right: 100px;
+    bottom: 10px;
+    width: 700px;
+  }
+  .small2{
+    position:absolute;
+    left: 100px;
+    bottom: 10px;
+    width: 700px;
   }
 
   .meter{
