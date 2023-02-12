@@ -5,9 +5,153 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #633979;
+  background-image: url("../images/log-inBG.png");
+  background-size: cover;
+  overflow:-moz-hidden-unscrollable;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-family: 'Esteban', serif;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  color: #FCA311;
+}
+
+h1 {
+  margin-top: 50px;
+  font-family: 'Esteban', serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #FCA311;
+}
+
+input[type=text]{
+  width: 200px;
+  padding: 4px;
+  border: none;
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input[type=password]{
+  width: 200px;
+  padding: 4px;
+  border: none;
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input[type=email]{
+  width: 200px;
+  padding: 4px;
+  border: none;
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input[type=number]{
+  width: 200px;
+  padding: 4px;
+  border: none;
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: white;
+}
+
+.box{
+  height: inherit;
+}
+
+.content{
+  vertical-align: middle;
+}
+
+.class{
+  margin: 16px;
+}
+
+a:hover .class{
+  background-color: #633979;
+  z-index: 2;
+  opacity: 30%;
+}
+
+a{
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: #FCA311;
+}
+
+a:hover{
+  font-family: 'Sarabun', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: #ffd99c;
+}
+input[type=submit]{
+  width: 200px;
+  margin-top: 16px;
+  padding: 4px;
+  border: none;
+  font-family: 'Estedad-VF';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  color: white; 
+  background-color: #fca311;
+}
+
+input[type=submit]:hover{
+  padding: 4px;
+  border: none;
+  font-family: 'Estedad-VF';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 25px;
+  color: #fca311;
+  background-color: white;
+}
+
+.input{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.log-in{
+  text-align: center;
 }
