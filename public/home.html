@@ -24,42 +24,35 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-      <link rel="stylesheet" href = "../src/index.css">
+      <link rel="stylesheet" href = "../src/home.css">
       <link href="https://fonts.googleapis.com/%22%3E" rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Esteban&family=Sarabun:wght@200;400&display=swap" rel="stylesheet"> 
 
-    <title>Odyssey Log-In</title>
+    <title>Explore Odyssey</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header>
+        <div class = "meter">
+            <div class = "progress">
+            </div>
+        </div>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class = "map">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-    <div class = "box">
-      <div class = "content">
-        <img src = "../images/logo.png">
-        <form class = "log-in">
-          <input type = "text" class = "input" placeholder = "User Name">
-          <br>
-          <input type = "password" class = "input" placeholder = "Password">
-          <br>
-          <a href = "">Forgot Password?</a>
-          <br>
-          <input type = "submit" placeholder = "Log In">
-          <br>
-          <p>Don't have an account? <a href = "sign-up.html">Sign up now!</a></p>
-        </form>
-      </div> 
     </div>
-    
-    
-  </body>
-</html>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href = "achievements.html" class = "small"><img src = "../images/achivements.png" width = 15% alt = "achievements"></a></li>
+                <li> <a href = "profile.html" class = "profile"><img src = "../images/profile.png" width = 40% alt = "profile"></a></li>
+                <li><a href = "leaderboard.html" class = "small"> <img src = "../images/medal1.png" width = 15% alt = "medal"></a></li>
+            </ul>
+            
+           
+            
+        </nav>
+    </footer>
+
+    </body>
